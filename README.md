@@ -7,7 +7,6 @@ Anggota         :
 4. Farrel Athalla Putra (Hipster)
 
 Front End
-![Screenshot_1705063208](https://github.com/ahsuunn/bisabisnis/assets/141555703/9936e15b-520d-4837-b11e-3559b44f1028)
 ![Screenshot_1705072704](https://github.com/ahsuunn/bisabisnis/assets/141555703/fcf97312-dadd-4012-9d29-5b94b7c95451)
 ![Screenshot_1705072709](https://github.com/ahsuunn/bisabisnis/assets/141555703/c9502cbe-2539-4b78-aeed-48b0cfa53b6a)
 ![Screenshot_1705072751](https://github.com/ahsuunn/bisabisnis/assets/141555703/c5a1b0ac-4e00-4a5a-b906-00346662572b)
