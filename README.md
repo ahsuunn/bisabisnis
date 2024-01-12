@@ -1,5 +1,5 @@
-Nama Tim        : Roga Tech
-Nama Aplikasi   : BisaBisnis
+Nama Tim        : Roga Tech; 
+Nama Aplikasi   : BisaBisnis; 
 Anggota         :
 1. Muhammad Azzam Robani (Hacker)
 2. Ahsan Malik Al Farisi (Hacker)
