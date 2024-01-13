@@ -317,7 +317,7 @@ class _HomePageState extends State<HomePage> {
                               left: 10, right: 5, top: 5, bottom: 0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
-                            color: Color.fromARGB(255, 83, 120, 240),
+                            color: Color.fromARGB(255, 0, 120, 240),
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
