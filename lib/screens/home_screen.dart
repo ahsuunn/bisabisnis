@@ -1,4 +1,4 @@
-import 'package:bisabisnis/pages/membership_page.dart';
+import 'package:bisabisnis/pages/membership1_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:bisabisnis/screens/allcoursemore_screen.dart';
 import 'package:bisabisnis/screens/berita1_screen.dart';
@@ -164,8 +164,7 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) =>
-                                      const MembershipPage()));
+                                  builder: (context) => const Berlangganan()));
                         },
                         child: Container(
                           width: 110,
