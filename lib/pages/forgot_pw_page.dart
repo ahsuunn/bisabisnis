@@ -49,8 +49,17 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-          backgroundColor: Colors.blueAccent,
+          title: Text(
+            'Password Reset',
+            style: GoogleFonts.montserrat(
+              color: Colors.white,
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          backgroundColor: Color.fromARGB(1, 26, 26, 26),
           leading: const BackButton(color: Colors.white)),
+
+      //body
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -64,8 +73,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           ),
           const SizedBox(height: 10),
           Padding(
-            padding: const EdgeInsets.only(right: 250.0),
-            child: Column(
+            padding: const EdgeInsets.only(left: 35),
+            child: Row(
               children: [
                 Text(
                   'Email',
@@ -74,6 +83,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     fontSize: 18,
                     color: Colors.grey,
                   ),
+                  textAlign: TextAlign.start,
                 ),
               ],
             ),
