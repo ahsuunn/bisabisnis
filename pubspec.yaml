@@ -25,4 +25,5 @@ flutter:
   uses-material-design: true
   assets:
     - assets/icons/
+    - assets/icons/businessman1.png
     - images/

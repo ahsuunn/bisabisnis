@@ -1,3 +1,4 @@
+import "package:bisabisnis/pages/investor_page.dart";
 import "package:bisabisnis/pages/login_screen.dart";
 import "package:cloud_firestore/cloud_firestore.dart";
 import "package:firebase_auth/firebase_auth.dart";
@@ -76,6 +77,16 @@ class _ProfilePageState extends State<ProfilePage> {
                 color: Colors.white,
               ),
             ),
+          ),
+          MaterialButton(
+            color: Colors.white,
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => InvestorPage()),
+              );
+            },
+            child: Text('Go to Investor Page'),
           ),
 
           SizedBox(height: 50),
