@@ -2,6 +2,7 @@ import 'package:bisabisnis/screens/course_screen.dart';
 import 'package:bisabisnis/screens/home_screen.dart';
 import 'package:bisabisnis/screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 List linkmateri = [
@@ -42,6 +43,8 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
     return Scaffold(
       body: ListView(
         children: [

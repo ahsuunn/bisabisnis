@@ -6,6 +6,7 @@ import 'package:bisabisnis/screens/beritamore_screen.dart';
 import 'package:bisabisnis/screens/makanandanminumancourse_screen.dart';
 import 'package:bisabisnis/screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 // Creating static data in lists
@@ -108,6 +109,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.white12),
       body: ListView(

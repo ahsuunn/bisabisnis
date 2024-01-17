@@ -1,5 +1,6 @@
 import 'package:bisabisnis/widgets/description_section.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../widgets/videos_section.dart';
@@ -26,6 +27,8 @@ class _CourseScreenState extends State<CourseScreen> {
   bool isVideosSection = true;
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
     return Scaffold(
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),

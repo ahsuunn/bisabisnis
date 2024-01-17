@@ -39,7 +39,8 @@ class _SignUpPageState extends State<SignUpPage> {
   Future signUp() async {
     if (passwordConfirmed()) {
       // create user
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      UserCredential userCredential =
+          await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );

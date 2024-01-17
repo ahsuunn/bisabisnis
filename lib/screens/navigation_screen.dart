@@ -1,3 +1,5 @@
+import 'package:bisabisnis/models/investor_model.dart';
+import 'package:bisabisnis/pages/investor_page.dart';
 import 'package:bisabisnis/pages/profile_page.dart';
 import 'package:bisabisnis/screens/allcourse_screen.dart';
 import 'package:bisabisnis/screens/home_screen.dart';
@@ -15,7 +17,7 @@ class _NavigationPageState extends State<NavigationPage> {
   final screens = [
     HomePage(),
     AllcourseScreen(),
-    HomePage(),
+    InvestorPage(),
     HomePage(),
     ProfilePage(),
   ];

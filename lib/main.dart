@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:bisabisnis/auth/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/services.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,6 +27,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
     return MaterialApp(
       theme: ThemeData(scaffoldBackgroundColor: Colors.black),
       debugShowCheckedModeBanner: false,

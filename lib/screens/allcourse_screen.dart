@@ -1,9 +1,11 @@
+import 'package:bisabisnis/pages/investor_page.dart';
 import 'package:bisabisnis/pages/membership1_page.dart';
 import 'package:bisabisnis/pages/profile_page.dart';
 import 'package:bisabisnis/screens/course_screen.dart';
 import 'package:bisabisnis/screens/home_screen.dart';
 import 'package:bisabisnis/screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 List catNames = [
@@ -64,13 +66,15 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
   final screens = [
     HomePage(),
     AllcourseScreen(),
-    HomePage(),
+    InvestorPage(),
     HomePage(),
     const ProfilePage(),
   ];
 
   @override
   Widget build(BuildContext context) {
+    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light);
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white12,
