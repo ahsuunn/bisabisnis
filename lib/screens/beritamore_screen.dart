@@ -10,9 +10,9 @@ List berita = [
 ];
 
 List linkberita = [
-  Berita1Screen(),
-  BeritamoreScreen(),
-  BeritamoreScreen(),
+  const Berita1Screen(),
+  const BeritamoreScreen(),
+  const BeritamoreScreen(),
 ];
 
 List fotoberita = [
@@ -23,6 +23,8 @@ List fotoberita = [
 
 // ignore: must_be_immutable
 class BeritamoreScreen extends StatefulWidget {
+  const BeritamoreScreen({super.key});
+
   @override
   _BeritamoreScreenState createState() => _BeritamoreScreenState();
 }
@@ -34,14 +36,14 @@ class _BeritamoreScreenState extends State<BeritamoreScreen> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(top: 020, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 020, left: 15, right: 15),
             child: Column(
               children: [
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      padding: EdgeInsets.only(left: 10),
+                      padding: const EdgeInsets.only(left: 10),
                       child: Text(
                         "BeritaBisnis",
                         style: GoogleFonts.montserrat(
@@ -51,25 +53,25 @@ class _BeritamoreScreenState extends State<BeritamoreScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     Material(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10),
                       child: Container(
-                        margin: EdgeInsets.only(top: 10),
+                        margin: const EdgeInsets.only(top: 10),
                         padding:
-                            EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+                            const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => NavigationPage()));
+                                    builder: (context) => const NavigationPage()));
                           },
                           child: Container(
                             margin:
-                                EdgeInsets.only(top: 0, right: 10, bottom: 15),
-                            child: Icon(
+                                const EdgeInsets.only(top: 0, right: 10, bottom: 15),
+                            child: const Icon(
                               Icons.home,
                               color: Colors.white,
                               size: 30,
@@ -80,10 +82,10 @@ class _BeritamoreScreenState extends State<BeritamoreScreen> {
                     ),
                   ],
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 ListView.builder(
                   itemCount: 3,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return InkWell(
@@ -98,15 +100,15 @@ class _BeritamoreScreenState extends State<BeritamoreScreen> {
                           Container(
                             width: 900,
                             height: 70,
-                            padding: EdgeInsets.only(top: 7, bottom: 5),
-                            margin: EdgeInsets.only(
+                            padding: const EdgeInsets.only(top: 7, bottom: 5),
+                            margin: const EdgeInsets.only(
                                 left: 0, right: 0, bottom: 4, top: 4),
                             decoration: BoxDecoration(
-                                color: Color.fromRGBO(0, 0, 0, 1),
+                                color: const Color.fromRGBO(0, 0, 0, 1),
                                 borderRadius: BorderRadius.circular(5)),
                             child: ListTile(
                               leading: Container(
-                                padding: EdgeInsets.all(5),
+                                padding: const EdgeInsets.all(5),
                                 height: 200,
                                 width: 90,
                                 decoration: BoxDecoration(
@@ -129,7 +131,7 @@ class _BeritamoreScreenState extends State<BeritamoreScreen> {
                           Container(
                             width: 370,
                             height: 1,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white10,
                             ),
                           ),

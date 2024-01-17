@@ -17,6 +17,8 @@ List waktuvideoList = [
 
 // ignore: must_be_immutable
 class VideoSection extends StatefulWidget {
+  const VideoSection({super.key});
+
   @override
   State<VideoSection> createState() => _VideoSectionState();
 }
@@ -26,7 +28,7 @@ class _VideoSectionState extends State<VideoSection> {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: babmakanan.length,
-      physics: NeverScrollableScrollPhysics(),
+      physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
       itemBuilder: (context, index) {
         return Column(
@@ -38,6 +40,8 @@ class _VideoSectionState extends State<VideoSection> {
                   color: Colors.white,
                 ),
               ),
+              onExpansionChanged: (bool expanded) {},
+              controlAffinity: ListTileControlAffinity.leading,
               children: <Widget>[
                 ListTile(
                   title: Text(
@@ -48,8 +52,6 @@ class _VideoSectionState extends State<VideoSection> {
                   ),
                 ),
               ],
-              onExpansionChanged: (bool expanded) {},
-              controlAffinity: ListTileControlAffinity.leading,
             ),
           ],
         );

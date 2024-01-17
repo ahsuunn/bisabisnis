@@ -18,21 +18,21 @@ List catNames = [
 ];
 
 List<Color> catColors = [
-  Color(0xFFFFCF2F),
-  Color(0xFF6FE08D),
-  Color(0xFF61BDFD),
-  Color(0xFFFC7F7F),
-  Color(0xFFCB84FB),
-  Color(0xFF78E667),
+  const Color(0xFFFFCF2F),
+  const Color(0xFF6FE08D),
+  const Color(0xFF61BDFD),
+  const Color(0xFFFC7F7F),
+  const Color(0xFFCB84FB),
+  const Color(0xFF78E667),
 ];
 
 List<Icon> catIcons = [
-  Icon(Icons.category, color: Colors.white, size: 30),
-  Icon(Icons.video_library, color: Colors.white, size: 30),
-  Icon(Icons.assignment, color: Colors.white, size: 30),
-  Icon(Icons.store, color: Colors.white, size: 30),
-  Icon(Icons.play_circle_fill, color: Colors.white, size: 30),
-  Icon(Icons.emoji_events, color: Colors.white, size: 30),
+  const Icon(Icons.category, color: Colors.white, size: 30),
+  const Icon(Icons.video_library, color: Colors.white, size: 30),
+  const Icon(Icons.assignment, color: Colors.white, size: 30),
+  const Icon(Icons.store, color: Colors.white, size: 30),
+  const Icon(Icons.play_circle_fill, color: Colors.white, size: 30),
+  const Icon(Icons.emoji_events, color: Colors.white, size: 30),
 ];
 
 List imgList = [
@@ -47,16 +47,18 @@ List imgList = [
 
 List linkmateri = [
   CourseScreen('Makanan & Minuman'),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
 ];
 
 // ignore: must_be_immutable
 class AllcourseScreen extends StatefulWidget {
+  const AllcourseScreen({super.key});
+
   @override
   _AllcourseScreenState createState() => _AllcourseScreenState();
 }
@@ -64,10 +66,10 @@ class AllcourseScreen extends StatefulWidget {
 class _AllcourseScreenState extends State<AllcourseScreen> {
   int currentIndex = 1;
   final screens = [
-    HomePage(),
-    AllcourseScreen(),
-    InvestorPage(),
-    HomePage(),
+    const HomePage(),
+    const AllcourseScreen(),
+    const InvestorPage(),
+    const HomePage(),
     const ProfilePage(),
   ];
 
@@ -82,19 +84,19 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
       body: ListView(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.only(left: 15, right: 15),
+            decoration: const BoxDecoration(
               color: Colors.white10,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 0),
+                const SizedBox(height: 0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 5, bottom: 20),
+                      margin: const EdgeInsets.only(top: 5, bottom: 20),
                       width: 245,
                       height: 30,
                       alignment: Alignment.center,
@@ -104,7 +106,7 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
                       ),
                       child: TextFormField(
                         decoration: InputDecoration(
-                          contentPadding: EdgeInsets.only(top: 0, bottom: 15),
+                          contentPadding: const EdgeInsets.only(top: 0, bottom: 15),
                           border: InputBorder.none,
                           hintText: "Cari materi",
                           hintStyle: GoogleFonts.montserrat(
@@ -120,12 +122,12 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 5, bottom: 20),
+                      margin: const EdgeInsets.only(top: 5, bottom: 20),
                       width: 125,
                       height: 30,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 83, 120, 240),
+                        color: const Color.fromARGB(255, 83, 120, 240),
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: InkWell(
@@ -156,7 +158,7 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 20, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
             child: Column(
               children: [
                 Row(
@@ -172,12 +174,12 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
                     ),
                   ],
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 GridView.builder(
-                  padding: EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.only(bottom: 20),
                   itemCount: imgList.length,
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1,
                     childAspectRatio:
@@ -196,7 +198,7 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
                             ));
                       },
                       child: Container(
-                        padding: EdgeInsets.only(left: 20, top: 10),
+                        padding: const EdgeInsets.only(left: 20, top: 10),
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("images/${imgList[index]}.jpg"),
@@ -207,7 +209,7 @@ class _AllcourseScreenState extends State<AllcourseScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(height: 155),
+                            const SizedBox(height: 155),
                             Text(
                               imgList[index],
                               style: GoogleFonts.montserrat(

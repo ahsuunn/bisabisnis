@@ -22,7 +22,7 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
             color: Colors.white,
           ),
         ),
-        leading: BackButton(
+        leading: const BackButton(
           color: Colors.white,
         ),
       ),
@@ -33,7 +33,7 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               'David Reynaldi',
               style: GoogleFonts.montserrat(
@@ -54,10 +54,10 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
-            Container(
+            SizedBox(
               height: 60,
               width: MediaQuery.of(context).size.width * 0.9,
               child: Row(
@@ -76,7 +76,7 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
 
@@ -104,16 +104,16 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
                     )
                   ],
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.check_circle_sharp,
                   color: Colors.green,
                   size: 30,
                 ),
               ],
             ),
-            Divider(
-              color: const Color.fromARGB(255, 76, 76, 76),
+            const Divider(
+              color: Color.fromARGB(255, 76, 76, 76),
             ),
 
             // Daftar Catalog
@@ -140,16 +140,16 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
                     )
                   ],
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.add_circle_outline,
                   color: Colors.grey,
                   size: 30,
                 ),
               ],
             ),
-            Divider(
-              color: const Color.fromARGB(255, 76, 76, 76),
+            const Divider(
+              color: Color.fromARGB(255, 76, 76, 76),
             ),
 
             // Business Model Canvas
@@ -176,16 +176,16 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
                     )
                   ],
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.add_circle_outline,
                   color: Colors.grey,
                   size: 30,
                 ),
               ],
             ),
-            Divider(
-              color: const Color.fromARGB(255, 76, 76, 76),
+            const Divider(
+              color: Color.fromARGB(255, 76, 76, 76),
             ),
 
             // Ajuan Modal
@@ -212,19 +212,19 @@ class _DavidApplyPageState extends State<DavidApplyPage> {
                     )
                   ],
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.add_circle_outline,
                   color: Colors.grey,
                   size: 30,
                 ),
               ],
             ),
-            Divider(
-              color: const Color.fromARGB(255, 76, 76, 76),
+            const Divider(
+              color: Color.fromARGB(255, 76, 76, 76),
             ),
 
-            SizedBox(height: 30),
+            const SizedBox(height: 30),
 
             // Submit
             Container(

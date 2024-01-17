@@ -56,7 +56,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               fontWeight: FontWeight.w600,
             ),
           ),
-          backgroundColor: Color.fromARGB(1, 26, 26, 26),
+          backgroundColor: const Color.fromARGB(1, 26, 26, 26),
           leading: const BackButton(color: Colors.white)),
 
       //body

@@ -1,4 +1,3 @@
-import 'package:bisabisnis/models/investor_model.dart';
 import 'package:bisabisnis/pages/investor_page.dart';
 import 'package:bisabisnis/pages/profile_page.dart';
 import 'package:bisabisnis/screens/allcourse_screen.dart';
@@ -8,6 +7,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 // ignore: must_be_immutable
 class NavigationPage extends StatefulWidget {
+  const NavigationPage({super.key});
+
   @override
   _NavigationPageState createState() => _NavigationPageState();
 }
@@ -15,11 +16,11 @@ class NavigationPage extends StatefulWidget {
 class _NavigationPageState extends State<NavigationPage> {
   int currentIndex = 0;
   final screens = [
-    HomePage(),
-    AllcourseScreen(),
-    InvestorPage(),
-    HomePage(),
-    ProfilePage(),
+    const HomePage(),
+    const AllcourseScreen(),
+    const InvestorPage(),
+    const HomePage(),
+    const ProfilePage(),
   ];
 
   @override
@@ -41,9 +42,9 @@ class _NavigationPageState extends State<NavigationPage> {
         selectedFontSize: 11,
         unselectedFontSize: 11,
         iconSize: 26,
-        selectedItemColor: Color.fromARGB(255, 83, 120, 240),
+        selectedItemColor: const Color.fromARGB(255, 83, 120, 240),
         unselectedItemColor: Colors.white54,
-        items: [
+        items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home_outlined), label: 'Home'),
           BottomNavigationBarItem(

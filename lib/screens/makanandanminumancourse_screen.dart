@@ -22,6 +22,8 @@ List fotosaran = [
 
 // ignore: must_be_immutable
 class makanandanminumancourseScreen extends StatefulWidget {
+  const makanandanminumancourseScreen({super.key});
+
   @override
   State<makanandanminumancourseScreen> createState() =>
       _makanandanminumancourseScreenState();
@@ -48,25 +50,25 @@ class _makanandanminumancourseScreenState
         ),
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         child: ListView(
           children: [
             Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               width: 100,
               height: 200,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
                 color: Colors.white54,
-                image: DecorationImage(
+                image: const DecorationImage(
                     image: AssetImage(
                         "images/Konsep Dasar Bisnis Makanan dan Minuman.jpg"),
                     fit: BoxFit.fill),
               ),
               child: Center(
                 child: Container(
-                  padding: EdgeInsets.all(5),
-                  child: Icon(
+                  padding: const EdgeInsets.all(5),
+                  child: const Icon(
                     Icons.play_arrow_rounded,
                     color: Colors.white,
                     size: 90,
@@ -74,7 +76,7 @@ class _makanandanminumancourseScreenState
                 ),
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
               "Konsep Dasar Bisnis Makanan dan Minuman",
               style: GoogleFonts.montserrat(
@@ -86,12 +88,12 @@ class _makanandanminumancourseScreenState
             Text(
               "08 : 05",
               style: GoogleFonts.montserrat(
-                color: Color.fromARGB(255, 83, 120, 240),
+                color: const Color.fromARGB(255, 83, 120, 240),
                 fontSize: 18,
                 fontWeight: FontWeight.w400,
               ),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
               "Pada video ini, akan dibedah konsep dan fundamental dalam melakukan bisnis FnB.",
               style: GoogleFonts.montserrat(
@@ -100,11 +102,11 @@ class _makanandanminumancourseScreenState
                 color: Colors.white,
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Container(
-              padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
               decoration: BoxDecoration(
-                color: Color.fromARGB(255, 0, 0, 0),
+                color: const Color.fromARGB(255, 0, 0, 0),
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Column(
@@ -122,10 +124,10 @@ class _makanandanminumancourseScreenState
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ListView.builder(
                     itemCount: 3,
-                    physics: NeverScrollableScrollPhysics(),
+                    physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemBuilder: (context, index) {
                       return InkWell(
@@ -133,18 +135,18 @@ class _makanandanminumancourseScreenState
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => NavigationPage()));
+                                  builder: (context) => const NavigationPage()));
                         },
                         child: Column(
                           children: [
                             Container(
                               width: 900,
                               height: 80,
-                              padding: EdgeInsets.only(top: 1, bottom: 0),
-                              margin: EdgeInsets.only(
+                              padding: const EdgeInsets.only(top: 1, bottom: 0),
+                              margin: const EdgeInsets.only(
                                   left: 0, right: 0, bottom: 8, top: 8),
                               decoration: BoxDecoration(
-                                  color: Color.fromARGB(255, 83, 120, 240)
+                                  color: const Color.fromARGB(255, 83, 120, 240)
                                       .withOpacity(0.9),
                                   borderRadius: BorderRadius.circular(5),
                                   border: Border.all(style: BorderStyle.solid)),
@@ -161,8 +163,8 @@ class _makanandanminumancourseScreenState
                                   ),
                                   child: Center(
                                     child: Container(
-                                      padding: EdgeInsets.all(5),
-                                      child: Icon(
+                                      padding: const EdgeInsets.all(5),
+                                      child: const Icon(
                                         Icons.play_arrow_rounded,
                                         color: Colors.white,
                                         size: 40,
@@ -191,7 +193,7 @@ class _makanandanminumancourseScreenState
                             Container(
                               width: 370,
                               height: 0,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.white10,
                               ),
                             ),

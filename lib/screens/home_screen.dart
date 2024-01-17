@@ -29,9 +29,9 @@ List imgList = [
 ];
 
 List linkrekom = [
-  makanandanminumancourseScreen(),
-  NavigationPage(),
-  NavigationPage(),
+  const makanandanminumancourseScreen(),
+  const NavigationPage(),
+  const NavigationPage(),
 ];
 
 List videoList = [
@@ -61,9 +61,9 @@ List berita = [
 ];
 
 List linkberita = [
-  Berita1Screen(),
-  NavigationPage(),
-  NavigationPage(),
+  const Berita1Screen(),
+  const NavigationPage(),
+  const NavigationPage(),
 ];
 
 List fotoberita = [
@@ -73,25 +73,27 @@ List fotoberita = [
 ];
 
 List<Color> catColors = [
-  Color(0xFFFFCF2F),
-  Color(0xFF6FE08D),
-  Color(0xFF61BDFD),
-  Color(0xFFFC7F7F),
-  Color(0xFFCB84FB),
-  Color(0xFF78E667),
+  const Color(0xFFFFCF2F),
+  const Color(0xFF6FE08D),
+  const Color(0xFF61BDFD),
+  const Color(0xFFFC7F7F),
+  const Color(0xFFCB84FB),
+  const Color(0xFF78E667),
 ];
 
 List<Icon> catIcons = [
-  Icon(Icons.category, color: Colors.white, size: 30),
-  Icon(Icons.video_library, color: Colors.white, size: 30),
-  Icon(Icons.assignment, color: Colors.white, size: 30),
-  Icon(Icons.store, color: Colors.white, size: 30),
-  Icon(Icons.play_circle_fill, color: Colors.white, size: 30),
-  Icon(Icons.emoji_events, color: Colors.white, size: 30),
+  const Icon(Icons.category, color: Colors.white, size: 30),
+  const Icon(Icons.video_library, color: Colors.white, size: 30),
+  const Icon(Icons.assignment, color: Colors.white, size: 30),
+  const Icon(Icons.store, color: Colors.white, size: 30),
+  const Icon(Icons.play_circle_fill, color: Colors.white, size: 30),
+  const Icon(Icons.emoji_events, color: Colors.white, size: 30),
 ];
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -116,19 +118,19 @@ class _HomePageState extends State<HomePage> {
       body: ListView(
         children: [
           Container(
-            padding: EdgeInsets.only(left: 15, right: 15),
-            decoration: BoxDecoration(
+            padding: const EdgeInsets.only(left: 15, right: 15),
+            decoration: const BoxDecoration(
               color: Colors.white10,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 0),
+                const SizedBox(height: 0),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 5, bottom: 20),
+                      margin: const EdgeInsets.only(top: 5, bottom: 20),
                       width: 245,
                       height: 30,
                       alignment: Alignment.center,
@@ -138,7 +140,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       child: TextFormField(
                         decoration: InputDecoration(
-                          contentPadding: EdgeInsets.only(top: 0, bottom: 15),
+                          contentPadding: const EdgeInsets.only(top: 0, bottom: 15),
                           border: InputBorder.none,
                           hintText: "Search",
                           hintStyle: GoogleFonts.montserrat(
@@ -154,12 +156,12 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 5, bottom: 20),
+                      margin: const EdgeInsets.only(top: 5, bottom: 20),
                       width: 125,
                       height: 30,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 83, 120, 240),
+                        color: const Color.fromARGB(255, 83, 120, 240),
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: InkWell(
@@ -253,9 +255,9 @@ class _HomePageState extends State<HomePage> {
               ),
             ],
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Padding(
-            padding: EdgeInsets.only(top: 10, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 10, left: 15, right: 15),
             child: Column(
               children: [
                 Row(
@@ -269,7 +271,7 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 50),
+                    const SizedBox(height: 50),
                     Material(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10),
@@ -278,11 +280,11 @@ class _HomePageState extends State<HomePage> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => AllcoursemoreScreen()));
+                                  builder: (context) => const AllcoursemoreScreen()));
                         },
                         child: Container(
-                          margin: EdgeInsets.only(top: 10),
-                          padding: EdgeInsets.symmetric(
+                          margin: const EdgeInsets.only(top: 10),
+                          padding: const EdgeInsets.symmetric(
                               vertical: 10, horizontal: 10),
                           child: Text(
                             "See more",
@@ -314,17 +316,17 @@ class _HomePageState extends State<HomePage> {
                         },
                         child: Container(
                           width: 260,
-                          margin: EdgeInsets.only(left: 0, right: 10),
-                          padding: EdgeInsets.only(
+                          margin: const EdgeInsets.only(left: 0, right: 10),
+                          padding: const EdgeInsets.only(
                               left: 10, right: 5, top: 5, bottom: 0),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(5),
-                            color: Color.fromARGB(255, 83, 120, 240),
+                            color: const Color.fromARGB(255, 83, 120, 240),
                           ),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              SizedBox(height: 5),
+                              const SizedBox(height: 5),
                               Container(
                                 height: 140,
                                 width: 240,
@@ -336,7 +338,7 @@ class _HomePageState extends State<HomePage> {
                                     borderRadius: BorderRadius.circular(5)),
                                 child: Center(
                                   child: Container(
-                                    child: Icon(
+                                    child: const Icon(
                                       Icons.play_arrow_rounded,
                                       color: Colors.white,
                                       size: 65,
@@ -344,7 +346,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                 ),
                               ),
-                              SizedBox(height: 5),
+                              const SizedBox(height: 5),
                               Text(
                                 imgList[index],
                                 style: GoogleFonts.montserrat(
@@ -361,7 +363,7 @@ class _HomePageState extends State<HomePage> {
                                   color: Colors.white.withOpacity(0.6),
                                 ),
                               ),
-                              SizedBox(height: 5),
+                              const SizedBox(height: 5),
                               Text(
                                 rekomVideo[index],
                                 style: GoogleFonts.montserrat(
@@ -377,7 +379,7 @@ class _HomePageState extends State<HomePage> {
                     },
                   ),
                 ),
-                SizedBox(height: 25),
+                const SizedBox(height: 25),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -389,24 +391,24 @@ class _HomePageState extends State<HomePage> {
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 30),
+                    const SizedBox(height: 30),
                     Material(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10),
                       child: Container(
-                        margin: EdgeInsets.only(top: 10),
+                        margin: const EdgeInsets.only(top: 10),
                         padding:
-                            EdgeInsets.symmetric(vertical: 0, horizontal: 10),
+                            const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
                         child: InkWell(
                           onTap: () {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => BeritamoreScreen()));
+                                    builder: (context) => const BeritamoreScreen()));
                           },
                           child: Container(
-                            margin: EdgeInsets.only(top: 0),
-                            padding: EdgeInsets.symmetric(
+                            margin: const EdgeInsets.only(top: 0),
+                            padding: const EdgeInsets.symmetric(
                                 vertical: 0, horizontal: 10),
                             child: Text(
                               "See more",
@@ -424,7 +426,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 ListView.builder(
                   itemCount: 3,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,
                   itemBuilder: (context, index) {
                     return InkWell(
@@ -439,15 +441,15 @@ class _HomePageState extends State<HomePage> {
                           Container(
                             width: 900,
                             height: 70,
-                            padding: EdgeInsets.only(top: 7, bottom: 5),
-                            margin: EdgeInsets.only(
+                            padding: const EdgeInsets.only(top: 7, bottom: 5),
+                            margin: const EdgeInsets.only(
                                 left: 0, right: 0, bottom: 4, top: 4),
                             decoration: BoxDecoration(
-                                color: Color.fromRGBO(0, 0, 0, 1),
+                                color: const Color.fromRGBO(0, 0, 0, 1),
                                 borderRadius: BorderRadius.circular(5)),
                             child: ListTile(
                               leading: Container(
-                                padding: EdgeInsets.all(5),
+                                padding: const EdgeInsets.all(5),
                                 height: 200,
                                 width: 90,
                                 decoration: BoxDecoration(
@@ -470,7 +472,7 @@ class _HomePageState extends State<HomePage> {
                           Container(
                             width: 370,
                             height: 1,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               color: Colors.white10,
                             ),
                           ),
@@ -479,7 +481,7 @@ class _HomePageState extends State<HomePage> {
                     );
                   },
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
               ],
             ),
           ),

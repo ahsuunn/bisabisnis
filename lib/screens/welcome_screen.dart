@@ -2,10 +2,12 @@ import 'package:bisabisnis/screens/navigation_screen.dart';
 import 'package:flutter/material.dart';
 
 class WelcomeScreen extends StatelessWidget {
+  const WelcomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Material(
-      child: Container(
+      child: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Stack(
@@ -15,14 +17,14 @@ class WelcomeScreen extends StatelessWidget {
                 Container(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height / 1.6,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.black,
                   ),
                 ),
                 Container(
                   width: MediaQuery.of(context).size.width,
                   height: MediaQuery.of(context).size.height / 1.6,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Color.fromARGB(255, 56, 102, 255),
                     borderRadius:
                         BorderRadius.only(bottomRight: Radius.circular(70)),
@@ -41,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height / 2.666,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color.fromARGB(255, 56, 102, 255),
                 ),
               ),
@@ -51,8 +53,8 @@ class WelcomeScreen extends StatelessWidget {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height / 2.666,
-                padding: EdgeInsets.only(top: 40, bottom: 30),
-                decoration: BoxDecoration(
+                padding: const EdgeInsets.only(top: 40, bottom: 30),
+                decoration: const BoxDecoration(
                   color: Colors.black,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(70),
@@ -60,7 +62,7 @@ class WelcomeScreen extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    Text(
+                    const Text(
                       "Learning is Everything",
                       style: TextStyle(
                         fontSize: 25,
@@ -70,9 +72,9 @@ class WelcomeScreen extends StatelessWidget {
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 40),
+                      padding: const EdgeInsets.symmetric(horizontal: 40),
                       child: Text(
                         "Learning with Pleasure with Dear Programmer, Wherever you are.",
                         textAlign: TextAlign.center,
@@ -82,21 +84,21 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(height: 60),
+                    const SizedBox(height: 60),
                     Material(
-                      color: Color.fromARGB(255, 56, 102, 255),
+                      color: const Color.fromARGB(255, 56, 102, 255),
                       borderRadius: BorderRadius.circular(10),
                       child: InkWell(
                         onTap: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => NavigationPage()));
+                                  builder: (context) => const NavigationPage()));
                         },
                         child: Container(
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               vertical: 15, horizontal: 80),
-                          child: Text(
+                          child: const Text(
                             "Get Start",
                             style: TextStyle(
                               color: Colors.white,

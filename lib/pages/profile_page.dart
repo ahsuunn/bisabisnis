@@ -9,8 +9,11 @@ class UserDataField extends StatefulWidget {
   final String value;
   final Function onTap;
 
-  UserDataField(
-      {required this.label, required this.value, required this.onTap});
+  const UserDataField(
+      {super.key,
+      required this.label,
+      required this.value,
+      required this.onTap});
 
   @override
   State<UserDataField> createState() => _UserDataFieldState();
@@ -49,7 +52,7 @@ class _UserDataFieldState extends State<UserDataField> {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width * 0.9,
-      decoration: BoxDecoration(),
+      decoration: const BoxDecoration(),
       child: Column(
         children: [
           GestureDetector(
@@ -78,8 +81,8 @@ class _UserDataFieldState extends State<UserDataField> {
                     ),
                   ],
                 ),
-                Spacer(),
-                Icon(
+                const Spacer(),
+                const Icon(
                   Icons.arrow_forward_ios_rounded,
                   size: 21,
                   color: Colors.white,
@@ -87,7 +90,7 @@ class _UserDataFieldState extends State<UserDataField> {
               ],
             ),
           ),
-          Divider(
+          const Divider(
             color: Color.fromARGB(255, 66, 65, 65),
             indent: 0,
             endIndent: 0,
@@ -116,9 +119,9 @@ class _ProfilePageState extends State<ProfilePage> {
     await showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Color.fromARGB(255, 45, 45, 45),
+        backgroundColor: const Color.fromARGB(255, 45, 45, 45),
         title: Text(
-          'Edit ${lowercaseField}',
+          'Edit $lowercaseField',
           style: GoogleFonts.montserrat(
             color: Colors.white,
           ),
@@ -176,10 +179,7 @@ class _ProfilePageState extends State<ProfilePage> {
     );
 
     // update in firestore
-    if (field == 'age') {
-      int newAge = int.tryParse(newValue) ?? 0;
-    }
-    if (newValue.trim().length > 0) {
+    if (newValue.trim().isNotEmpty) {
       //only updates if there is something in the textfield
       await usersCollection
           .doc(currentUser.uid)
@@ -203,7 +203,7 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(1, 26, 26, 26),
+        backgroundColor: const Color.fromARGB(1, 26, 26, 26),
       ),
       resizeToAvoidBottomInset: false,
       body: Padding(
@@ -235,7 +235,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             height: 1200,
                             child: Column(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.person_2_sharp,
                                   size: 120,
                                   color: Colors.grey,
@@ -247,7 +247,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                       fontWeight: FontWeight.w600,
                                       fontSize: 24),
                                 ),
-                                SizedBox(height: 20),
+                                const SizedBox(height: 20),
 
                                 //display box
                                 Container(
@@ -255,7 +255,8 @@ class _ProfilePageState extends State<ProfilePage> {
                                       MediaQuery.of(context).size.width * 0.9,
                                   height: 395,
                                   decoration: BoxDecoration(
-                                    color: Color.fromARGB(255, 45, 45, 45),
+                                    color:
+                                        const Color.fromARGB(255, 45, 45, 45),
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                   child: Padding(
@@ -266,7 +267,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                         // Display user data
                                         UserDataField(
                                           label: 'Name',
-                                          value: '${firstName} ${lastName}',
+                                          value: '$firstName $lastName',
                                           onTap: editField,
                                         ),
                                         UserDataField(
@@ -306,7 +307,7 @@ class _ProfilePageState extends State<ProfilePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 30),
+                                const SizedBox(height: 30),
                                 // Log Out
                                 MaterialButton(
                                   minWidth: 140,
@@ -334,20 +335,20 @@ class _ProfilePageState extends State<ProfilePage> {
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 30),
+                                const SizedBox(height: 30),
                               ],
                             ),
                           ),
                         );
                       }
                     } else {
-                      return Center(child: CircularProgressIndicator());
+                      return const Center(child: CircularProgressIndicator());
                     }
                   },
                 );
               }
             } else {
-              return Center(child: CircularProgressIndicator());
+              return const Center(child: CircularProgressIndicator());
             }
           },
         ),

@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class DescriptionSection extends StatelessWidget {
+  const DescriptionSection({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(left: 10, right: 10),
+      padding: const EdgeInsets.only(left: 10, right: 10),
       child: Column(
         children: [
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           Text(
             "Coming Soon!",
             style: GoogleFonts.montserrat(
@@ -17,7 +19,7 @@ class DescriptionSection extends StatelessWidget {
             ),
             textAlign: TextAlign.justify,
           ),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
         ],
       ),
     );

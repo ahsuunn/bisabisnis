@@ -7,9 +7,9 @@ import "package:flutter/services.dart";
 import "package:google_fonts/google_fonts.dart";
 
 List page = [
-  TimothyPage(),
-  DavidPage(),
-  JonathanPage(),
+  const TimothyPage(),
+  const DavidPage(),
+  const JonathanPage(),
 ];
 
 class InvestorPage extends StatefulWidget {
@@ -56,12 +56,12 @@ class _InvestorPageState extends State<InvestorPage> {
               ),
 
               // Textfield
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 5, bottom: 10),
+                    margin: const EdgeInsets.only(top: 5, bottom: 10),
                     width: MediaQuery.of(context).size.width * 0.9,
                     height: 30,
                     alignment: Alignment.center,
@@ -71,7 +71,8 @@ class _InvestorPageState extends State<InvestorPage> {
                     ),
                     child: TextFormField(
                       decoration: InputDecoration(
-                        contentPadding: EdgeInsets.only(top: 0, bottom: 15),
+                        contentPadding:
+                            const EdgeInsets.only(top: 0, bottom: 15),
                         border: InputBorder.none,
                         hintText: "Search",
                         hintStyle: GoogleFonts.montserrat(
@@ -91,75 +92,73 @@ class _InvestorPageState extends State<InvestorPage> {
 
               // List Investor
 
-              Container(
-                child: ListView.builder(
-                  physics: NeverScrollableScrollPhysics(),
-                  shrinkWrap: true,
-                  itemCount: investor.length,
-                  itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        // list box
-                        SizedBox(height: 10),
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) {
-                              return page[index];
-                            }));
-                          },
-                          child: Container(
-                            height: 60,
-                            width: MediaQuery.of(context).size.width * 0.9,
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              children: [
-                                CircleAvatar(
-                                  radius: 40,
-                                  backgroundImage: AssetImage(
-                                    investor[index].imagePath,
-                                  ),
+              ListView.builder(
+                physics: const NeverScrollableScrollPhysics(),
+                shrinkWrap: true,
+                itemCount: investor.length,
+                itemBuilder: (context, index) {
+                  return Column(
+                    children: [
+                      // list box
+                      const SizedBox(height: 10),
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) {
+                            return page[index];
+                          }));
+                        },
+                        child: SizedBox(
+                          height: 60,
+                          width: MediaQuery.of(context).size.width * 0.9,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              CircleAvatar(
+                                radius: 40,
+                                backgroundImage: AssetImage(
+                                  investor[index].imagePath,
                                 ),
-                                SizedBox(width: 7),
+                              ),
+                              const SizedBox(width: 7),
 
-                                // list investor
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(
-                                      height: 5,
+                              // list investor
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const SizedBox(
+                                    height: 5,
+                                  ),
+                                  Text(
+                                    investor[index].name,
+                                    style: GoogleFonts.montserrat(
+                                      color: Colors.blueAccent,
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600,
                                     ),
-                                    Text(
-                                      investor[index].name,
-                                      style: GoogleFonts.montserrat(
-                                        color: Colors.blueAccent,
-                                        fontSize: 18,
-                                        fontWeight: FontWeight.w600,
-                                      ),
+                                  ),
+                                  Text(
+                                    investor[index].description,
+                                    style: GoogleFonts.montserrat(
+                                      color: Colors.white,
+                                      fontSize: 14,
+                                      fontWeight: FontWeight.w500,
                                     ),
-                                    Text(
-                                      investor[index].description,
-                                      style: GoogleFonts.montserrat(
-                                        color: Colors.white,
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.w500,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
+                                  ),
+                                ],
+                              ),
+                            ],
                           ),
                         ),
-                        Divider(
-                          endIndent: 25,
-                          indent: 108,
-                          color: Color.fromARGB(255, 53, 53, 53),
-                        ),
-                      ],
-                    );
-                  },
-                ),
+                      ),
+                      const Divider(
+                        endIndent: 25,
+                        indent: 108,
+                        color: Color.fromARGB(255, 53, 53, 53),
+                      ),
+                    ],
+                  );
+                },
               ),
             ],
           ),

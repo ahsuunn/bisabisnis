@@ -7,12 +7,12 @@ import 'package:google_fonts/google_fonts.dart';
 
 List linkmateri = [
   CourseScreen('Makanan & Minuman'),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
-  NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
+  const NavigationPage(),
 ];
 
 List imgList = [
@@ -27,6 +27,8 @@ List imgList = [
 
 // ignore: must_be_immutable
 class AllcoursemoreScreen extends StatefulWidget {
+  const AllcoursemoreScreen({super.key});
+
   @override
   _AllcoursemoreScreenState createState() => _AllcoursemoreScreenState();
 }
@@ -34,11 +36,11 @@ class AllcoursemoreScreen extends StatefulWidget {
 class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
   int currentIndex = 1;
   final screens = [
-    HomePage(),
-    AllcoursemoreScreen(),
-    HomePage(),
-    HomePage(),
-    HomePage(),
+    const HomePage(),
+    const AllcoursemoreScreen(),
+    const HomePage(),
+    const HomePage(),
+    const HomePage(),
   ];
 
   @override
@@ -49,7 +51,7 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
       body: ListView(
         children: [
           Padding(
-            padding: EdgeInsets.only(top: 020, left: 15, right: 15),
+            padding: const EdgeInsets.only(top: 020, left: 15, right: 15),
             child: Column(
               children: [
                 Row(
@@ -63,7 +65,7 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(height: 50),
+                    const SizedBox(height: 50),
                     Material(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(10),
@@ -72,11 +74,12 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => NavigationPage()));
+                                  builder: (context) =>
+                                      const NavigationPage()));
                         },
                         child: Container(
-                          margin: EdgeInsets.only(top: 0, right: 10),
-                          child: Icon(
+                          margin: const EdgeInsets.only(top: 0, right: 10),
+                          child: const Icon(
                             Icons.home,
                             color: Colors.white,
                             size: 30,
@@ -86,12 +89,12 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
                     ),
                   ],
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 GridView.builder(
-                  padding: EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.only(bottom: 20),
                   itemCount: imgList.length,
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 1,
                     childAspectRatio:
@@ -110,7 +113,7 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
                             ));
                       },
                       child: Container(
-                        padding: EdgeInsets.only(left: 15, top: 10),
+                        padding: const EdgeInsets.only(left: 15, top: 10),
                         decoration: BoxDecoration(
                           image: DecorationImage(
                               image: AssetImage("images/${imgList[index]}.jpg"),
@@ -121,7 +124,7 @@ class _AllcoursemoreScreenState extends State<AllcoursemoreScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            SizedBox(height: 140),
+                            const SizedBox(height: 140),
                             Text(
                               imgList[index],
                               style: GoogleFonts.montserrat(

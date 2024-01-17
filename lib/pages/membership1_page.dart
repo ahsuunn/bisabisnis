@@ -16,7 +16,7 @@ class _BerlanggananState extends State<Berlangganan> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 0, 0, 1),
+        backgroundColor: const Color.fromRGBO(0, 0, 0, 1),
         leading: const BackButton(color: Colors.white),
         title: Row(
           children: [
@@ -41,7 +41,7 @@ class _BerlanggananState extends State<Berlangganan> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: GestureDetector(
@@ -61,21 +61,21 @@ class _BerlanggananState extends State<Berlangganan> {
                     decoration: BoxDecoration(
                       gradient: RadialGradient(
                         colors: [
-                          Color.fromARGB(255, 63, 63, 63),
-                          Color.fromARGB(255, 37, 37, 37).withAlpha(210)
+                          const Color.fromARGB(255, 63, 63, 63),
+                          const Color.fromARGB(255, 37, 37, 37).withAlpha(210)
                         ],
                         radius: 1.5,
                       ),
-                      boxShadow: [BoxShadow(blurRadius: 20)],
+                      boxShadow: const [BoxShadow(blurRadius: 20)],
                       borderRadius: BorderRadius.circular(7),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsets.only(top: 0),
+                              padding: const EdgeInsets.only(top: 0),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,14 +97,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -132,14 +132,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -162,21 +162,10 @@ class _BerlanggananState extends State<Berlangganan> {
                               ],
                             ),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Container(
                             height: 30,
                             width: MediaQuery.of(context).size.width * 0.8,
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                'Rp 300.000 / tahun',
-                                style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
@@ -188,6 +177,17 @@ class _BerlanggananState extends State<Berlangganan> {
                               ),
                               borderRadius: BorderRadius.circular(100),
                             ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                'Rp 300.000 / tahun',
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -197,7 +197,7 @@ class _BerlanggananState extends State<Berlangganan> {
               ),
 
               // Advance Package
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: GestureDetector(
@@ -217,21 +217,21 @@ class _BerlanggananState extends State<Berlangganan> {
                     decoration: BoxDecoration(
                       gradient: RadialGradient(
                         colors: [
-                          Color.fromARGB(255, 28, 25, 96),
-                          Color.fromARGB(255, 13, 12, 48).withAlpha(150)
+                          const Color.fromARGB(255, 28, 25, 96),
+                          const Color.fromARGB(255, 13, 12, 48).withAlpha(150)
                         ],
                         radius: 1,
                       ),
-                      boxShadow: [BoxShadow(blurRadius: 10)],
+                      boxShadow: const [BoxShadow(blurRadius: 10)],
                       borderRadius: BorderRadius.circular(7),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsets.only(top: 0),
+                              padding: const EdgeInsets.only(top: 0),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -253,14 +253,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -288,14 +288,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -323,14 +323,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -353,21 +353,10 @@ class _BerlanggananState extends State<Berlangganan> {
                               ],
                             ),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Container(
                             height: 30,
                             width: MediaQuery.of(context).size.width * 0.8,
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                'Rp 400.000 / tahun',
-                                style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
@@ -379,6 +368,17 @@ class _BerlanggananState extends State<Berlangganan> {
                               ),
                               borderRadius: BorderRadius.circular(100),
                             ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                'Rp 400.000 / tahun',
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       ),
@@ -388,7 +388,7 @@ class _BerlanggananState extends State<Berlangganan> {
               ),
 
               // Elite Package
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25.0),
                 child: GestureDetector(
@@ -408,21 +408,21 @@ class _BerlanggananState extends State<Berlangganan> {
                     decoration: BoxDecoration(
                       gradient: RadialGradient(
                         colors: [
-                          Color.fromARGB(255, 63, 20, 98),
-                          Color.fromARGB(255, 32, 10, 50).withAlpha(150)
+                          const Color.fromARGB(255, 63, 20, 98),
+                          const Color.fromARGB(255, 32, 10, 50).withAlpha(150)
                         ],
                         radius: 1,
                       ),
-                      boxShadow: [BoxShadow(blurRadius: 10)],
+                      boxShadow: const [BoxShadow(blurRadius: 10)],
                       borderRadius: BorderRadius.circular(7),
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(12),
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         children: [
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsets.only(top: 0),
+                              padding: const EdgeInsets.only(top: 0),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -444,14 +444,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -479,14 +479,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -514,14 +514,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -549,14 +549,14 @@ class _BerlanggananState extends State<Berlangganan> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  margin: EdgeInsets.only(top: 5),
-                                  child: Icon(
+                                  margin: const EdgeInsets.only(top: 5),
+                                  child: const Icon(
                                     Icons.check_circle_outline_rounded,
                                     color: Colors.blueAccent,
                                     size: 30,
                                   ),
                                 ),
-                                SizedBox(width: 5),
+                                const SizedBox(width: 5),
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -579,21 +579,10 @@ class _BerlanggananState extends State<Berlangganan> {
                               ],
                             ),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           Container(
                             height: 30,
                             width: MediaQuery.of(context).size.width * 0.8,
-                            child: Align(
-                              alignment: Alignment.center,
-                              child: Text(
-                                'Rp 500.000 / tahun',
-                                style: GoogleFonts.montserrat(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w700,
-                                ),
-                              ),
-                            ),
                             decoration: BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
@@ -604,6 +593,17 @@ class _BerlanggananState extends State<Berlangganan> {
                                 end: Alignment.bottomCenter,
                               ),
                               borderRadius: BorderRadius.circular(100),
+                            ),
+                            child: Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                'Rp 500.000 / tahun',
+                                style: GoogleFonts.montserrat(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w700,
+                                ),
+                              ),
                             ),
                           )
                         ],

@@ -16,13 +16,13 @@ class _JonathanPageState extends State<JonathanPage> {
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: Colors.black,
-        leading: BackButton(color: Colors.white),
+        leading: const BackButton(color: Colors.white),
       ),
       body: SafeArea(
           child: Column(
         children: [
           //Title
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
@@ -31,7 +31,7 @@ class _JonathanPageState extends State<JonathanPage> {
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text('Jonathan',
@@ -46,7 +46,7 @@ class _JonathanPageState extends State<JonathanPage> {
                 color: Colors.white,
                 fontWeight: FontWeight.w400,
               )),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
 
@@ -87,7 +87,7 @@ class _JonathanPageState extends State<JonathanPage> {
               ],
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           // Total Dana Diinvestasi
           Column(
@@ -124,7 +124,7 @@ class _JonathanPageState extends State<JonathanPage> {
               ),
             ],
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
 
           // Total Mitra / Pelaku Usaha
           Column(
@@ -162,14 +162,14 @@ class _JonathanPageState extends State<JonathanPage> {
             ],
           ),
 
-          Spacer(),
+          const Spacer(),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               GestureDetector(
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return JonathanApplyPage();
+                    return const JonathanApplyPage();
                   }));
                 },
                 child: Container(
@@ -197,7 +197,7 @@ class _JonathanPageState extends State<JonathanPage> {
               ),
             ],
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
         ],
       )),
     );

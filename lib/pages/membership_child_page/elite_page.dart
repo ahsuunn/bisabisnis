@@ -13,8 +13,8 @@ class _ElitePageState extends State<ElitePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(1, 255, 255, 255),
-        leading: BackButton(color: Colors.white),
+        backgroundColor: const Color.fromARGB(1, 255, 255, 255),
+        leading: const BackButton(color: Colors.white),
         title: Text(
           'Pembayaran',
           style: GoogleFonts.montserrat(
@@ -36,21 +36,21 @@ class _ElitePageState extends State<ElitePage> {
                       fontSize: 35,
                       fontWeight: FontWeight.w600),
                 ),
-                SizedBox(height: 15),
+                const SizedBox(height: 15),
 
                 // BisaKelas
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 5),
-                      child: Icon(
+                      margin: const EdgeInsets.only(top: 5),
+                      child: const Icon(
                         Icons.check_circle_outline_rounded,
                         color: Colors.blueAccent,
                         size: 30,
                       ),
                     ),
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -73,20 +73,20 @@ class _ElitePageState extends State<ElitePage> {
                   ],
                 ),
 
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 //BisaBerita
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 5),
-                      child: Icon(
+                      margin: const EdgeInsets.only(top: 5),
+                      child: const Icon(
                         Icons.check_circle_outline_rounded,
                         color: Colors.blueAccent,
                         size: 30,
                       ),
                     ),
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -109,21 +109,21 @@ class _ElitePageState extends State<ElitePage> {
                   ],
                 ),
 
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
 
                 //BisaModal
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 5),
-                      child: Icon(
+                      margin: const EdgeInsets.only(top: 5),
+                      child: const Icon(
                         Icons.check_circle_outline_rounded,
                         color: Colors.blueAccent,
                         size: 30,
                       ),
                     ),
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -146,21 +146,21 @@ class _ElitePageState extends State<ElitePage> {
                   ],
                 ),
 
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
 
                 //BisaMentor
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(top: 5),
-                      child: Icon(
+                      margin: const EdgeInsets.only(top: 5),
+                      child: const Icon(
                         Icons.check_circle_outline_rounded,
                         color: Colors.blueAccent,
                         size: 30,
                       ),
                     ),
-                    SizedBox(width: 5),
+                    const SizedBox(width: 5),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -183,7 +183,7 @@ class _ElitePageState extends State<ElitePage> {
                   ],
                 ),
 
-                SizedBox(height: 30),
+                const SizedBox(height: 30),
                 Text(
                   'Rp 500.000',
                   style: GoogleFonts.montserrat(
@@ -200,7 +200,7 @@ class _ElitePageState extends State<ElitePage> {
                 ),
 
                 //Metode Pembayaran
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
                 Column(
@@ -216,7 +216,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/bca.png'),
                               )),
                         ),
@@ -226,7 +226,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/mandiri.png'),
                               )),
                         ),
@@ -236,14 +236,14 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/bni.jpg'),
                               )),
                         ),
                       ],
                     ),
 
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     //baris 2
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -254,7 +254,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/visa.jpg'),
                               )),
                         ),
@@ -264,7 +264,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image:
                                     AssetImage('assets/icons/mastercard.jpg'),
                               )),
@@ -275,14 +275,14 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/jcb.png'),
                               )),
                         ),
                       ],
                     ),
 
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     //baris 3
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -293,7 +293,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 fit: BoxFit.fitHeight,
                                 image: AssetImage('assets/icons/alto.png'),
                               )),
@@ -304,7 +304,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 fit: BoxFit.fill,
                                 image: AssetImage('assets/icons/prima.png'),
                               )),
@@ -315,14 +315,14 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/alfamart.png'),
                               )),
                         ),
                       ],
                     ),
 
-                    SizedBox(height: 20),
+                    const SizedBox(height: 20),
                     //baris 4
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -333,7 +333,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/indomaret.png'),
                               )),
                         ),
@@ -343,7 +343,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 fit: BoxFit.scaleDown,
                                 image:
                                     AssetImage('assets/icons/BCAKlikPay.png'),
@@ -355,7 +355,7 @@ class _ElitePageState extends State<ElitePage> {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage('assets/icons/gopay.png'),
                                 scale: 0.1,
                               )),
@@ -364,7 +364,7 @@ class _ElitePageState extends State<ElitePage> {
                     ),
                   ],
                 ),
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
               ],
             ),
           ),

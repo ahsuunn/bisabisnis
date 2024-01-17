@@ -16,7 +16,7 @@ class GoogleAuth {
       );
       _auth.signInWithCredential(credential);
     } catch (error) {
-      print(error);
+      (error);
     }
   }
 }
